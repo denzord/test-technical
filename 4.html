@@ -8,42 +8,50 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container bg-dark text-white">
-        <nav class="navbar-dark bg-dark p-2">
+    <div class="container-fluid bg-dark text-white">
+        <nav class="navbar-dark p-2">
             <a class="navbar-brand">
                 <span class="text-white mr-1 display-4">Dw</span>
                 <span class="display-4 text-warning">Skill</span> 
             </a>
         </nav>
 
-        <div class="row bg-secondary pt-3 pb-3 m-3 rounded">         
-            <div class="btn-group ">
-                <div class="custom-file w-50 ml-4">
-                    <input type="file" class="custom-file-input" id="inputGroupFile">
-                    <label class="custom-file-label">Attache</label>
-                </div>
-                <div class="btn-group w-75 ml-4">
-                    <input type="text" class="form-control" placeholder="Input Name Programmer" aria-label="Input Name Programmer" aria-describedby="button-addon2">
-                </div>
-                <div class="btn-group w-50 ml-4">
-                    <span class="input-group-text" id="inputGroupFileAddon02">Add User</span>
-                </div>
+        <div class="row bg-secondary m-5 rounded">
+            <div class="col-12 p-3 col-sm-3 col-xl-3">
+                <button type="file" class="btn btn-light w-100">Attache</button>
             </div>
+            <div class="col-12 p-3 col-sm-5 col-xl-6">
+                <input type="text" class="btn btn-light w-100" value="Input Name Programmer">
+            </div>
+            <div class="col-12 p-3 col-sm-4 col-xl-3">
+                <button type="button" class="btn btn-danger text-white w-100">Add User</button>
+            </div>       
         </div>
 
-        <div class="row bg-secondary p-2 m-3">
-            <div class="card bg-dark m-3">
-                <img src="wolf.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h3 class="card-title">Nunchaku</h3>
-                    <p class="card-text">
-                        PHP, HTML, CSS                        
-                    </p>
-                </div>                
-                <button type="button" class="btn btn-warning"> Add Skill</button>
+        <div class="row bg-secondary m-5 rounded">
+            <div class="col-4 p-3">
+                <img src="wolf.jpg" class="img-fluid">
             </div>
+            <div class="d-flex flex-column col-4 p-3">
+                <h3 class="font-weight-bold" style="font-size:4vw">Nunchaku</h3>
+                <p class="text-danger font-weight-bold mt-auto" style="font-size:2vw;">
+                    PHP, HTML, CSS                        
+                </p>
+                <input class="input text-left p-1 rounded w-100 font-weight-bold mt-auto" placeholder="Input Skill">
+            </div>
+            <div class="d-flex align-items-end flex-column bd-highlight col-4 p-3">
+                <div class="bd-hihglight">
+                    <button type="button" class="p-2 btn-danger rounded">Edit</button>
+                    <button type="button" class="p-2 btn-danger rounded">X</button>
+                </div>
+                <div class="mt-auto bd-hihglight">
+                    <button type="button" class="p-2 btn-danger rounded">Add Skill</button>
+                </div>
+            </div>        
         </div>
-
+        <footer>
+            <p class="text-center p-3 font-weight-bold">Created by: Deni Sugiarto 2020</p>
+        </footer>
     </div>
 
     <script>
